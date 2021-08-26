@@ -97,6 +97,7 @@ p {
     bottom: 3px;
     /*Coloquei esse bottom 3px, para não haver nenhum espaço entre o svg e o banner. */
     position: relative;
+    z-index: 1000;
 }
 
 #gamb {
@@ -159,11 +160,19 @@ p {
 .box-qrcode {
     width: auto;
     height: 120px;
-    position: relative;
+    align-items: center;
     left: 0%;
     background: #fff;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 1000;
+}
+
+.box-qrcode img {
+    z-index: 1000;
+    width: 180px;
+    height: 180px;
+    opacity: 1;
+    position: relative;
 }
 
 .rodape {
@@ -193,22 +202,19 @@ p {
     margin: 05px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .dados-doacao,
     .botoes-doacao {
         right: 0;
         margin-top: 20px;
     }
     .box-qrcode {
-        width: auto;
-        height: 200px;
+        margin-left: -08%;
+        width: 180px;
+        height: 180px;
     }
-    .itens-copy {
-        margin: 10px;
-    }
-    .pix-copy {
-        margin: 10px;
-        margin-left: 60px;
+    #pix-copy {
+        margin-left: -5%;
     }
 }
 

@@ -1,4 +1,5 @@
-import '../../styles/styleDoacao.scss'
+import '../../styles/styleDoacao.scss';
+import Qrcode from '../../img/qrcode.png';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -121,7 +122,9 @@ export default function PageInstituto() {
                         <h2 className="display-8" id="h2-pix">SCANEIE QR CODE</h2>
                         <div className="row">
                             <div className="col-4"></div>
-                            <div className="col-4 col-md-12 box-qrcode"></div>
+                            <div className="col-4 col-md-12 box-qrcode">
+                                <img src={Qrcode}/>
+                            </div>
                             <div className="col-4"></div>
                         </div>
                     </div>
@@ -130,7 +133,7 @@ export default function PageInstituto() {
                         <h2 className="display-8" id="h2-pix">PIX COPIE E COLA</h2>
                         <div className="row itens-copy">
                             <div className="col-12">
-                                <input type="text" id="pix-copy" className="form-control" value="exemploexemplo" disabled />
+                                <input type="text" id="pix-copy" className="form-control" value="06e33d08-cf02-4fbb-a573-ed46779c2142" disabled />
                                 <button className="btn btn-principal" id="btn-copy" type="submit">COPIAR <i className="bi bi-clipboard"></i></button>
 
                             </div>
