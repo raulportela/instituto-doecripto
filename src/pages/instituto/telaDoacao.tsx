@@ -123,7 +123,7 @@ export default function PageInstituto() {
                         <div className="row">
                             <div className="col-4"></div>
                             <div className="col-4 col-md-12 box-qrcode">
-                                <img src={Qrcode}/>
+                                <img src={Qrcode} />
                             </div>
                             <div className="col-4"></div>
                         </div>
@@ -144,11 +144,10 @@ export default function PageInstituto() {
             <footer className="rodape">
                 <div className="row">
                     <div className="social-icons">
-                        <a href="#"><i className="bi bi-facebook"></i></a>
-                        <a href="#"><i className="bi bi-instagram"></i></a>
-                        <a href="#"><i className="bi bi-twitter"></i></a>
-                        <a href="#"><i className="bi bi-telegram"></i></a>
-                        <a href="#"><i className="bi bi-envelope"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/Doecriptooficial-109272728092811/?ref=pages_you_manage"><i className="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/doecripto/"><i className="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://twitter.com/doecripto?s=09"><i className="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://t.me/doecripto"><i className="fab fa-telegram-plane"></i></a>
                     </div>
                 </div>
                 <p className="copyright">Todos os direitos reservados. <i className="bi bi-copyright"></i></p>
